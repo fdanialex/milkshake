@@ -51,6 +51,7 @@ var milk = (function(){
     var shaker;
     var canvas;
     var audio;
+    this.shake = shaker;
 
     function shake(elementId) {
 	canvas = document.getElementById(elementId);
