@@ -37,7 +37,7 @@ var Shaker = Class.extend({
 							 this.settings.meshX, this.settings.meshY);
 	    }
 
-	    this.presetPos = 4;
+	    this.presetPos = 3;
 	    this.activePreset = this.loadPreset();
 	    Renderer.SetPipeline(this.activePreset.pipeline());
 
