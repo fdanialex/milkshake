@@ -51,7 +51,6 @@ var milk = (function(){
     var shaker;
     var canvas;
     var audio;
-    this.shake = shaker;
 
     function shake(elementId) {
 	canvas = document.getElementById(elementId);
@@ -60,6 +59,7 @@ var milk = (function(){
 	try {
 	    initGL(function () {
 		    shaker = new Shaker();
+		    this.shaker = shaker;
 		    audio = new SoundCloudAudio();
 		    animationLoop();
 		    setInterval(function() {
