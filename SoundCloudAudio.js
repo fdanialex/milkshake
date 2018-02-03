@@ -8,7 +8,7 @@ var SoundCloudAudio = Class.extend({
 	    this.tracks = [];
 	    this.trackPos = 0;
 
-	    this.playlistURL = "http://soundcloud.com/mattgattis/likes";
+	    this.playlistURL = "https://soundcloud.com/azad-giordano-ratzki/likes";
 	    var args = window.location.search.substring(1).split("&");
 	    for (var i = 0; i < args.length; i++) {
 		var arg = args[i].split("=");
