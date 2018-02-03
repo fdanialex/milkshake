@@ -59,6 +59,7 @@ var milk = (function(){
 	try {
 	    initGL(function () {
 		    shaker = new Shaker();
+		    this.shaker = shaker;
 		    audio = new SoundCloudAudio();
 		    animationLoop();
 		    setInterval(function() {
